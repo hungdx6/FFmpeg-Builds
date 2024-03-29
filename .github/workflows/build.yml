@@ -123,7 +123,7 @@ jobs:
       - name: Image Name
         id: imagename
         run: |
-          IMG="btbn/ffmpeg-builds/base-${{ matrix.target }}"
+          IMG="hungdx6/ffmpeg-builds/base-${{ matrix.target }}"
           echo "name=ghcr.io/${IMG/ /-}" >> $GITHUB_OUTPUT
           echo "rawname=${IMG/ /-}" >> $GITHUB_OUTPUT
           echo "gh_repo=${GITHUB_REPOSITORY,,}" >> $GITHUB_OUTPUT
@@ -179,7 +179,7 @@ jobs:
       - name: Image Name
         id: imagename
         run: |
-          IMG="btbn/ffmpeg-builds/${{ matrix.target }}-${{ matrix.variant }}"
+          IMG="hungdx6/ffmpeg-builds/${{ matrix.target }}-${{ matrix.variant }}"
           echo "name=ghcr.io/${IMG/ /-}" >> $GITHUB_OUTPUT
           echo "rawname=${IMG/ /-}" >> $GITHUB_OUTPUT
       - name: Get download cache key
